@@ -1,0 +1,68 @@
+.contact-container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-container h1{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contact-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-container form input{
+  border: 1px solid rgb(150, 150, 150);
+  padding-left: 1rem;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.contact-container form textarea{
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid rgb(150, 150, 150);
+  resize: none;
+}
+
+.contact-container form button{
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+
+.contact-container form button:hover{
+  background-color: white;
+  color: #202023;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 900px) {
+  .contact-container{
+    margin: 0;
+  }
+}

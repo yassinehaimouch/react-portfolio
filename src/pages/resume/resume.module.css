@@ -1,0 +1,49 @@
+.resume-container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume-container h1{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.resume{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.resume h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.resume button{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  padding: 0 2rem;
+  width: 250px;
+  height: 3rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.resume button:hover{
+  color: #202023;
+  background-color: white;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 900px) {
+  .resume-container{
+    margin: 0;
+  }
+}

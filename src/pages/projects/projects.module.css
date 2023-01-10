@@ -1,0 +1,52 @@
+.projects-container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.7rem;
+}
+
+.project img,
+.project{
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.projects-container h1{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.projects-container p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1470px) {
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 900px) {
+  .projects-container{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1475px) {
+  .projects-container{
+    margin: 0;
+  }
+}

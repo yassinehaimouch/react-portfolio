@@ -1,0 +1,83 @@
+.nav-container{
+  margin-top: 2rem;
+}
+
+.nav-container ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-container ul li{
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =============== NavBar Phone =============== */
+
+.nav-phone-container ul{
+  list-style: none;
+  color: #202023;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.8rem;
+  padding: 10px 20px;
+}
+
+.nav-phone-container ul li{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.nav-phone-container{
+  background-color: #2c3648;
+  width: 150px;
+  border-radius: 5px;
+  margin-left: 10.4rem;
+  margin-top: 0.8rem;
+  position: absolute;
+  border: 1px solid #404959;
+  top: 60px;
+  display: none;
+}
+
+
+.navicon{
+  margin-left: 16.7rem;
+  margin-top: 1rem;
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+
+.icon{ 
+  height: 35px;
+  width: 35px;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+
+@media screen and (max-width: 965px) {
+  .nav-container{
+    display: none;
+  }
+  .nav-phone-container{
+    display: block;
+  }
+
+  .navicon{
+    display: inline-flex;
+  }
+}
