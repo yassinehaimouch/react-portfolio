@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./navbar.module.css";
 import {AiOutlineMenu} from 'react-icons/ai';
@@ -17,6 +17,16 @@ const Navbar = () => {
     setDisplay('none');
   }
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setDisplay('none');
+    })
+    return () => {
+      window.removeEventListener('resize', () => {
+        setDisplay('none');
+      })
+    }
+  })
   return (
     <>
       <nav className={classes["nav-container"]}>
